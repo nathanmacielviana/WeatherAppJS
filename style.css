@@ -1,0 +1,52 @@
+body
+{
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to right, #4CAF50, #2196F3);;
+}
+
+.container{text-align: center;}
+.container h1{color: green; font-weight: bold;}
+
+.weather-card
+{
+    background-color: white;
+    border-radius: 20px;
+    padding: 20px;
+    transition: transform 0.3s ease-in-out;
+    width: 450px;
+}
+
+#city-input
+{
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 7px;
+    font-size: 16px;
+}
+#city-input:focus{outline: none; border-color: black;}
+#city-input ::placeholder {color: #aaa;}
+
+#city-input-btn
+{
+    padding: 10px;
+    background-color: #2196F3;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+}
+#city-input-btn:hover{background-color: #1565C0; transform: scale(1.04);}
+
+#weather-info{display: none;}
+#weather-icon{width: 100px; height: 100px;}
+#temperatura{font-size: 24px; font-weight: bold; margin: 8px 0;}
+#descricao{font-size: 18px; margin-bottom: 10px;}
+#ventovel{font-size: 16px; color: rgb(255, 0, 0);}
+#date{font-size: 14px; color: rgb(255, 0, 0);}

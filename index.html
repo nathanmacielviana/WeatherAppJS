@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap">
+</head>
+<body>
+    <div class="container">
+        <!--card-->
+        <div class="weather-card">
+            <h1>Weather App com Js</h1>
+            <input type="text" id="city-input" placeholder="Cidade">
+            <button id="city-input-btn" onclick="weatherFn($('#city-input').val())">Obter Previsão</button>
+
+            <!--infos-->
+            <div id="weather-info" class="animacao">
+                <h3 id="city-name"></h3>
+                <p id="date"></p>
+                <img src="" id="weather-icon">
+                <p id="temperatura"></p>
+                <p id="descricao"></p>
+                <p id="ventovel"></p>
+            </div>
+        </div>
+    </div>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://momentjs.com/downloads/moment.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
